@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+:root {
+    --color1: #27D6E1;
+    --color2: #3DAEB6;
+    --color3: #46878B;
+    --color4: #415F61;
+    --color5: #2E3636;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    background-color: var(--color4);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#register {
+    display: block;
+    position: absolute;
+
+    background-color: #ffffff;
+
+    width: 250px;
+    height: 470px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #000000c0;
+
+    top: 50%;
+    left: 50%;
+
+    transition: width .5s, height .5s;
+    transition-timing-function: is;
+    
+    transform: translate(-50%, -50%);
+}
+
+section#register h1 {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2em;
+}
+
+section#register > div#image {
+    background: url(../../images/logo.png) no-repeat;
+    background-size: 250px;
+    height: 200px;
+    background-position: center center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+section#register > div#form {
+    display: block;
+
+    padding: 10px;
+}
+
+section#register > div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section#register > div#form > p {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 10px 0px;
+}
+
+form > div.field {
+    background-color: var(--color3);
+
+    border: 2px solid var(--color3);
+
+    width: 100%;
+    height: 40px;
+
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+form label {
+    display: none;
+} 
+
+div.field > span {
+    color: #ffffff;
+
+    font-size: 2em;
+
+    width: 40px;
+
+    padding: 5px;
+}
+
+div.field > input {
+    background-color: rgba(255, 255, 255, 0.475);
+
+    font-size: 1em;
+
+    padding: 5px;
+
+    width: calc(100% - 46px);
+    height: 90%;
+
+    border: none;
+    border-radius: 8px;
+    
+    transform: translateY(-11.5px);
+}
+
+div.field > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: var(--color2);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--color1);
+    cursor: pointer;
+}
+
+form > a.button {
+    display: block;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+
+    padding-top: 5px;
+    margin-top: 5px;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: var(--color3);
+    color: white;
+
+    border-radius: 5px;
+    border: 1px solid var(--color2);
+}
+
+form > a.button:hover {
+    background-color: var(--color1);
+}

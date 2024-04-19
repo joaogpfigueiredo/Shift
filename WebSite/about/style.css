@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+:root {
+    --color1: #27D6E1;
+    --color2: #3DAEB6;
+    --color3: #46878B;
+    --color4: #415F61;
+    --color5: #2E3636;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.conteiner {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+body.conteiner > header {
+    align-self: flex-start;
+    width: 100%;
+}
+
+div.header{
+    display: flex;
+
+    background-color: #ffffff;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+img.logo {
+    max-width: 50px;
+}
+
+div.header > h1 {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.header > span {
+    cursor: pointer;
+}
+
+header > menu {
+    background-color: #ffffff;
+
+    max-height: 0px;
+
+    overflow: hidden;
+
+    box-shadow: 3px 3px 5px #00000038;
+
+    transition: max-height 750ms ease-in-out;
+}
+
+header > menu.active {
+    max-height: 40px;
+}
+
+header > menu.list > ul {
+    display: flex;
+
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+
+    padding: 10px;
+
+    justify-content: space-around;
+}
+
+header > menu.list > ul > li {
+    display: inline-block;
+}
+
+header a {
+    border-radius: 10px;
+
+    color: black;
+    text-decoration: none;
+
+    padding: 5px;
+    
+    transition: ease 500ms;
+}
+
+header a:hover {
+    background-color: var(--color2);
+    transition: ease 500ms;
+}
+
+
+body.conteiner > main {
+    display: flex;
+
+    background-color: #2B3333;
+    color: white;
+
+    border-radius: 3px;
+    
+    flex-grow: 1;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.content div.intro {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: left;
+
+    background-color: #ffffff;
+
+    flex-grow: 1;
+}
+
+.content div.intro h1 {
+    color: #000000;
+
+    margin: 10px 0px 0px 10px;
+    
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content div.intro p {
+    color: #000000;
+
+    margin: 10px 0px 0px 10px;
+    
+    line-height: 1.5em;
+}
+
+.content div.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color3);
+}
+
+.content div.get-in-touch > h2 {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+
+    margin: 10px 0px 5px 10px;
+}
+
+.content div.get-in-touch > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px 0px 10px 10px;
+}
+
+.content div.get-in-touch > form > input.box {
+    width: 50%;
+    height: 30px;
+
+    background-color: var(--color5);
+    
+    box-shadow: inset 0 0 6px #00000080;
+
+    padding-left: 10px;
+
+    margin-bottom: 7px;
+}
+
+.content div.get-in-touch > form > input#message {
+    height: 100px;
+}
+
+.content div.get-in-touch > form > div.terms {
+    margin: 10px;
+}
+
+.content div.get-in-touch > form > div.terms > label > a {
+    color: #ffffffb3;
+    text-decoration: none;
+}
+
+.content div.get-in-touch > form > div.terms > label > a:hover {
+    color: var(--color4);
+}
+
+.content div.get-in-touch > form > input[type=submit] {
+    cursor: pointer;
+    width: 30%;
+
+    height: 30px;
+
+    background-color: var(--color2);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+
+    margin: 10px 0px 5px 0px;
+}
+
+.content div.get-in-touch > form > input[type=submit]:hover {
+    background-color: var(--color1);
+    cursor: pointer;
+}
+
+body.conteiner > footer {
+    display: flex;
+
+    background-color: #ffffff;
+
+    flex-basis: 100%;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+body.conteiner footer h2 {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer > div.socials > a {
+    color: #000000;
+
+    margin: 0px 5px 0px 5px;
+
+    font-size: 1.3em;
+    text-decoration: none;
+}

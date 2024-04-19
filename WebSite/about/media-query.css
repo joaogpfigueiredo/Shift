@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+    --color1: #17bcc7;
+    --color2: #3DAEB6;
+    --color3: #46878B;
+    --color4: #415F61;
+    --color5: #2E3636;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body.conteiner footer h2 {
+        font-size: 1.8em;
+    }
+
+    footer > div.socials > a {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    
+    body.conteiner footer h2 {
+        font-size: 2em;
+    }
+
+    footer > div.socials > a {
+        font-size: 1.7em;
+    }
+
+}

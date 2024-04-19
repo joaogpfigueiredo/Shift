@@ -1,0 +1,5 @@
+username/password/email/phoneNumber/balance
+Diogo/12335
+Ze/23894
+Goncalo/445566
+Joao/12221133
