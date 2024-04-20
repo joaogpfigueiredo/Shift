@@ -63,7 +63,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             
             mysqli_stmt_execute($stmt);
 
-            header("Location: ../index.html");
+            setcookie('username', $username, time() + (86400 * 30), "/");
+            header("Location: ../inside/inside.html");
+            exit();
         }
 
     } catch (PDOException $e) {

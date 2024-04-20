@@ -1,1 +1,0 @@
-username/password/email/phoneNumber/card1ID:balance:currencyCode;card2ID:balance:currencyCode;card3ID:balance:currencyCode

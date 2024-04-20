@@ -37,7 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($row = mysqli_fetch_assoc($result)) {
             if (password_verify($pwd, $row['password'])) {
-                header("Location: ../index.html");
+                $username = $row['name'];
+                setcookie('username', $username, time() + (86400 * 30), "/");
+                header("Location: ../inside/inside.html");
                 exit();
             } else {
                 $error_message = "Username or password incorrect, try again!";
