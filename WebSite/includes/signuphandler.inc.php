@@ -8,16 +8,16 @@ $port = "3333";
 
 $conn = mysqli_init();
 
-    if (!$conn) {
-        die('mysqli_init failed');
-    }
+if (!$conn) {
+    die('mysqli_init failed');
+}
 
-    mysqli_ssl_set($conn, 'NULL', NULL, '../singlestore_bundle.pem', NULL, NULL);
+mysqli_ssl_set($conn, 'NULL', NULL, '../singlestore_bundle.pem', NULL, NULL);
 
-    // Tentar estabelecer uma conexão segura
-    if (!mysqli_real_connect($conn, $host, $dbusername, $password, $dbname, $port, NULL, MYSQLI_CLIENT_SSL)) {
-        die('Connection Error: ' . mysqli_connect_error());
-    }
+// Tentar estabelecer uma conexão segura
+if (!mysqli_real_connect($conn, $host, $dbusername, $password, $dbname, $port, NULL, MYSQLI_CLIENT_SSL)) {
+    die('Connection Error: ' . mysqli_connect_error());
+}
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
