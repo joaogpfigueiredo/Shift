@@ -18,6 +18,10 @@
         font-size: 1.5em;
     }
 
+    .content div.get-in-touch > h2 {
+        margin-left: 50px;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -28,6 +32,10 @@
 
     footer > div.socials > a {
         font-size: 1.7em;
+    }
+
+    .content div.get-in-touch > h2 {
+        margin-left: 100px;
     }
 
 }

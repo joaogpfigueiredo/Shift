@@ -10,21 +10,22 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-    html, body {
+    main {
         background-image: linear-gradient(to bottom, var(--color5), var(--color4), var(--color3));
     }
 
     section#register {
-        width: 80vw;
-        height: 270px;
+        width: 90vw;
+        height: 360px;
     }
     
     section#register > div#image {
         float: left;
 
-        background-size: 240px;
+        background-size: 100%;
+        background-position: left;
 
-        width: 30%;
+        width: 50%;
         height: 100%;
 
         border-radius: 20px 0px 0px 20px;
@@ -32,7 +33,7 @@
 
     section#register > div#form {
         float: right;
-        width: 70%;
+        width: 50%;
     }
 
     section#register > div#form > p {
@@ -43,13 +44,13 @@
 
 @media screen and (min-width: 992px) {
     
-    html, body {
+    main {
         background-image: linear-gradient(to bottom, var(--color5), var(--color4), var(--color3));
     }
 
     section#register {
         width: 950px;
-        height: 300px;
+        height: 400px;
     }
     
     section#register > div#image {
@@ -58,7 +59,7 @@
         background-size: 80%;
         background-position: right;
 
-        width: 45%;
+        width: 50%;
         height: 100%;
 
         border-radius: 0px 20px 20px 0px;
@@ -67,7 +68,7 @@
     section#register > div#form {
         float: left;
 
-        width: 55%;
+        width: 50%;
     }
 
     section#register > div#form > h1 {

@@ -28,8 +28,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about/about.html">About Us</a></li>
-                    <li><a href="../register/register.html">Sign Up</a></li>
-                    <li><a href="../login/login.html">Sign in</a></li>
+                    <li><a href="register/register.html">Sign Up</a></li>
+                    <li><a href="login/login.html">Sign in</a></li>
                 </ul>
             </menu>
         </header>
@@ -49,18 +49,18 @@
                 <h2>Get In Touch </h2>
 
                 <form method="post">
-                    <input type="text" name="iname" id="name" class="box" placeholder="Enter Your Name" required>
+                    <input type="text" name="iname" id="name" class="box" placeholder="Enter Your Name" required required maxlength="50">
                     
                     <input type="email" name="iemail" id="email" class="box" placeholder="Enter a Valid Email Address" autocomplete="email" required maxlength="30">
 
-                    <input type="text" name="imessage" id="message" class="box" placeholder="Type Your Message Here" required minlength="50">
+                    <textarea name="imessage" id="message" class="box" wrap="soft" cols="30" rows="10" placeholder="Type Your Message Here" required minlength="50"></textarea>
                     
                     <div class="terms">
                         <input type="checkbox" name="iaccept" id="accept" required> 
                         <label for="accept">I accept the <a href="#">Terms and Conditions</a>
                     </div>
                     
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="getintouchSent()">
                 </form>
             </div>
         </main>

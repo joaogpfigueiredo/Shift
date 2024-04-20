@@ -17,6 +17,7 @@
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: none;
 }
 
 body.conteiner {
@@ -36,7 +37,7 @@ body.conteiner > header {
 div.header{
     display: flex;
 
-    background-color: #ffffff;
+    background-color: #000000dd;
 
     align-items: center;
     justify-content: space-between;
@@ -52,14 +53,17 @@ div.header > h1 {
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    color: #ffffff;
 }
 
 div.header > span {
     cursor: pointer;
+    color: #ffffff;
 }
 
 header > menu {
-    background-color: #ffffff;
+    background-color: #000000dd;
 
     max-height: 0px;
 
@@ -92,7 +96,7 @@ header > menu.list > ul > li {
 header a {
     border-radius: 10px;
 
-    color: black;
+    color: #ffffff;
     text-decoration: none;
 
     padding: 5px;
@@ -105,14 +109,10 @@ header a:hover {
     transition: ease 500ms;
 }
 
-
 body.conteiner > main {
     display: flex;
 
-    background-color: #2B3333;
     color: white;
-
-    border-radius: 3px;
     
     flex-grow: 1;
     flex-direction: column;
@@ -120,14 +120,42 @@ body.conteiner > main {
 }
 
 .content div.intro {
-    background-color: white;
+    display: flex;
+
+    flex-direction: column;
+    align-items: left;
+    margin: 10px 0px 10px 0px;
 
     flex-grow: 1;
+}
+
+.content div.intro h2 {
+    color: #000000;
+
+    margin: 10px 0px 0px 10px;
+    
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content div.intro p {
+    color: #000000;
+
+    text-align: justify;
+
+    margin: 30px 15px 30px 15px;
+    
+    line-height: 1.5em;
 }
 
 .content div.get-in-touch {
     display: flex;
     flex-direction: column;
+
+    margin: 5px;
+    border-radius: 10px;
+
     background-color: var(--color3);
 }
 
@@ -137,7 +165,7 @@ body.conteiner > main {
     font-style: normal;
     font-size: 2em;
 
-    margin: 10px 0px 5px 10px;
+    margin: 15px 0px 5px 15px;
 }
 
 .content div.get-in-touch > form {
@@ -145,28 +173,32 @@ body.conteiner > main {
     flex-direction: column;
     align-items: center;
 
-    margin: 20px 0px 10px 10px;
+    margin: 10px 0px 10px 0px;
 }
 
-.content div.get-in-touch > form > input.box {
-    width: 50%;
+.content div.get-in-touch > form > .box {
+    width: 60%;
     height: 30px;
+    color: #ffffffab;
 
     background-color: var(--color5);
     
     box-shadow: inset 0 0 6px #00000080;
 
-    padding-left: 10px;
+    padding: 0px 10px 0px 10px;
 
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
-.content div.get-in-touch > form > input#message {
-    height: 100px;
+.content div.get-in-touch > form > textarea#message {
+    resize: none;
+    overflow: hidden;
+    
+    height: 50px;
 }
 
 .content div.get-in-touch > form > div.terms {
-    margin: 10px;
+    margin: 5px;
 }
 
 .content div.get-in-touch > form > div.terms > label > a {
@@ -190,7 +222,7 @@ body.conteiner > main {
     border: none;
     border-radius: 5px;
 
-    margin: 10px 0px 5px 0px;
+    margin: 5px 0px 0px 0px;
 }
 
 .content div.get-in-touch > form > input[type=submit]:hover {
@@ -201,7 +233,7 @@ body.conteiner > main {
 body.conteiner > footer {
     display: flex;
 
-    background-color: #ffffff;
+    background-color: #000000dd;
 
     flex-basis: 100%;
 
@@ -215,10 +247,11 @@ body.conteiner footer h2 {
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #ffffff;
 }
 
 footer > div.socials > a {
-    color: #000000;
+    color: #ffffff;
 
     margin: 0px 5px 0px 5px;
 

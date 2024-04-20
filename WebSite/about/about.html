@@ -7,8 +7,8 @@
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../media-query.css">
     <link rel="stylesheet" href="media-query.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,30 +38,26 @@
     
         <main class="content">
             <div class="intro">
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga, ad aperiam ab, aut accusantium ut vitae earum est consequuntur architecto atque commodi reiciendis velit delectus quisquam enim quos dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, hic! Ea cumque assumenda perspiciatis autem aut unde quia velit sapiente cum. Necessitatibus expedita incidunt fugit maxime veniam dolorem eveniet laudantium.</p>
-            </div>
-
-            <div class="second">
-
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga, ad aperiam ab, aut accusantium ut vitae earum est consequuntur architecto atque commodi reiciendis velit delectus quisquam enim quos dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, hic! Ea cumque assumenda perspiciatis autem aut unde quia velit sapiente cum. Necessitatibus expedita incidunt fugit maxime veniam dolorem eveniet laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis reprehenderit suscipit, temporibus est laboriosam consequatur aspernatur aliquid commodi sunt magnam corrupti. Magni quos, assumenda dolor asperiores laborum ullam officiis vitae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, sint? Doloremque, nihil quas, excepturi iusto illum veniam placeat tempora sequi suscipit praesentium iure voluptatem quia, reprehenderit sit? Ducimus, dolor molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui delectus modi, consequuntur accusantium nemo, perferendis facilis molestias itaque harum odit aliquam ducimus alias ipsum fuga quia consectetur inventore fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quis nihil quaerat officiis. Odit mollitia aut molestias sequi necessitatibus. Nulla voluptatem quae impedit reiciendis officiis veritatis quos magnam dicta cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam corrupti odit porro suscipit labore, vitae praesentium, eveniet corporis blanditiis aut dolore reprehenderit quo consequatur odio dolorem, cum molestiae id unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non recusandae ducimus et quos assumenda earum soluta ad itaque doloremque, modi accusantium odio perferendis corporis sunt exercitationem quo labore sed! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit at earum debitis sint, animi a architecto eius dolorem natus neque sit quas tenetur veniam esse quam quisquam rerum hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo excepturi rerum quam magnam aspernatur numquam ipsa reiciendis autem quas et repudiandae dolore quasi tenetur eum iure eveniet, quo facilis temporibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora pariatur, aliquid dolore provident ab quod eius hic, aliquam exercitationem odio odit repudiandae natus laboriosam labore rerum omnis ea corporis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perspiciatis. Error dolorum, perspiciatis veniam iusto aliquid incidunt tempore debitis quos molestias quibusdam facere neque, nisi quam. Nobis eos corrupti fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta accusamus voluptatum dolorum itaque quaerat autem harum vitae perspiciatis ducimus quam ad qui recusandae, iste quod dolore, nesciunt tempora eius voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit libero sed eum ullam, distinctio unde similique reprehenderit fugit repellendus quo officia culpa nesciunt amet modi temporibus assumenda cum adipisci doloribus!</p>
             </div>
 
             <div class="get-in-touch">
                 <h2>Get In Touch </h2>
 
                 <form method="post">
-                    <input type="text" name="iname" id="name" class="box" placeholder="Enter Your Name" required>
+                    <input type="text" name="iname" id="name" class="box" placeholder="Enter Your Name" required maxlength="50">
                     
                     <input type="email" name="iemail" id="email" class="box" placeholder="Enter a Valid Email Address" autocomplete="email" required maxlength="30">
 
-                    <input type="text" name="imessage" id="message" class="box" placeholder="Type Your Message Here" required minlength="50">
-                    
+                    <textarea name="imessage" id="message" class="box" wrap="soft" cols="30" rows="10" placeholder="Type Your Message Here" required minlength="50"></textarea>
+
                     <div class="terms">
                         <input type="checkbox" name="iaccept" id="accept" required> 
                         <label for="accept">I accept the <a href="#">Terms and Conditions</a>
                     </div>
                     
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="getintouchSent()">
                 </form>
             </div>
         </main>

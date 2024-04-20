@@ -1,5 +1,1 @@
-username/password/email/phoneNumber/balance
-Diogo/12335
-Ze/23894
-Goncalo/445566
-Joao/12221133
+username/password/email/phoneNumber/card1ID:balance:currencyCode;card2ID:balance:currencyCode;card3ID:balance:currencyCode
