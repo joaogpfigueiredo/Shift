@@ -1,9 +1,32 @@
+@charset "UTF-8";
+
+:root {
+    --color1: #17bcc7;
+    --color2: #3DAEB6;
+    --color3: #46878B;
+    --color4: #415F61;
+    --color5: #2E3636;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
-
+    
+    div.content > a {
+        height: 100px;
+    }
+    
+    div.content > a#logout {
+        height: 80px;
+    }
 }
 
 @media screen and (min-width: 992px) {
-
+    
+    div.content > a {
+        height: 150px;
+    }
+    
+    div.content > a#logout {
+        height: 130px;
+    }
 
 }

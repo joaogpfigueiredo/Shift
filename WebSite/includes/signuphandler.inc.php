@@ -64,7 +64,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             mysqli_stmt_execute($stmt);
 
             setcookie('username', $username, time() + (86400 * 30), "/");
-            header("Location: ../inside/inside.html");
+            header("Location: ../inside/inside.php");
             exit();
         }
 

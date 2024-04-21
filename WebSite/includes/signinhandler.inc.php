@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (password_verify($pwd, $row['password'])) {
                 $username = $row['name'];
                 setcookie('username', $username, time() + (86400 * 30), "/");
-                header("Location: ../inside/inside.html");
+                header("Location: ../inside/inside.php");
                 exit();
             } else {
                 $error_message = "Username or password incorrect, try again!";
@@ -57,4 +57,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     header("Location: ../index.html");
 }
-?>
