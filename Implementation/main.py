@@ -324,7 +324,6 @@ class Aplicacao(App):
                     cards.append(Card(ID, balance, currencyCode))
                 self.db.append(User(username, password, email, phoneNumber, cards))
 
+
 if __name__ == '__main__':
     Aplicacao().run()
-message.txt
-13 KB
